@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+    <p>Name: {{area}}</p>
+    <p>County: {{area.county}}</p>
+    <p>Brief description: {{area.description}}</p>
+    <p> <a href={{area.url}}>more info</a> </p>
+{% endblock %}

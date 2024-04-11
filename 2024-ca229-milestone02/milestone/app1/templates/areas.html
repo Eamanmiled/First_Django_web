@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    
+
+    <ul>
+    {% for a in areas %}
+        <li>{{a}}, ({{a.county}})</li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

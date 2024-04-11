@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    
+    {% for a in areas %}
+        <p><a href="{% url 'single_area' id=a.id %}">{{a}}</a></p>
+        <ul>
+        {% for att in a.attractions.all %}
+            <li><a href={{att.url}}>{{att}}</a></li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+
+{% endblock %}
